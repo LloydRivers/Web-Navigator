@@ -1,5 +1,3 @@
-// src/logger.ts
-
 class Logger {
   static Log(message: string) {
     console.log(`INFO: ${message}`);

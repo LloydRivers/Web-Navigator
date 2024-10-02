@@ -76,22 +76,16 @@ while (finish === false) {
     lowerCaseAnswer !== "b" &&
     lowerCaseAnswer !== "q"
   ) {
-    // we create a new page based on the url
     newPage(answer);
   } else if (showNext === true && lowerCaseAnswer === "n") {
-    // we navigate forward a page
     nextPage();
   } else if (showBack === true && lowerCaseAnswer === "b") {
-    // we navigate back a page
     backPage();
   } else if (lowerCaseAnswer === "b") {
-    // invalid input to a non-available option
     Logger.Log("Cannot go back a page. Stack is empty.");
   } else if (lowerCaseAnswer === "n") {
-    // invalid input to a non-available option
     Logger.Log("Cannot go to the next page. Stack is empty.");
   } else if (lowerCaseAnswer === "q") {
-    // we quit the program
     finish = true;
   }
 
@@ -111,6 +105,3 @@ while (finish === false) {
   instructions = `${instructions}, ${quitInfo}`;
   Logger.Log(instructions);
 }
-// ------------------------------
-// User Interface Part 2
-// ------------------------------
